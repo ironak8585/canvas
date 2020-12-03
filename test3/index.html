@@ -5,25 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konva Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="header topbar">
-        <h1>Konva Test</h1>
+        <h1>Konva Test 3</h1>
     </div>
 
     <div class="container">
         <div class="canvasContainer">
             <video playsinline autoplay muted loop id="background-video">
-                <source src=testvideo.mp4 type="video/mp4">
+                <source id="video-source" src=../videos/testvideo.mp4 type="video/mp4">
             </video>
             <div id="playground">
             </div>
         </div>
         <div class="playground-controls">
             <h3>Adjustments</h3>
-            <canvas id="c"></canvas>
+            <select class="background-option" name="" id="background-option">
+                <option value="Video Background">Video Background</option>
+                <option value="Image Background">Image Background</option>
+                <option disabled value="Gradient Background">Gradient Background</option>
+                <option value="Colored Background">Colored Background</option>
+                <option disabled value="Animation 1">Animation 1</option>
+                <option disabled value="Animation 2">Animation 2</option>
+                <option disabled value="Animation 3">Animation 3</option>
+            </select>
+
+            <input type="text" name="" id="video-url" class="video-url" placeholder="Video URL to Change Background">
+
+            <input type="color" value="#ff0000" class="colorpicker" name="" id="colorChoice">
+
         </div>
     </div>
 

@@ -6,6 +6,7 @@
 
 body {
     background-color: #333;
+    /* background-color: yellowgreen; */
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,6 +23,8 @@ body {
     /* align-items: center; */
     justify-content: center;
     /* min-height: 100vh; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .canvasContainer {
@@ -57,8 +60,9 @@ body {
 
 /* Addition */
 
-canvas {
-    display: block;
-    width: 100vw;
-    height: 100vh;
+.background-option,
+.video-url {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
 }
