@@ -90,6 +90,25 @@ stage.add(layer2);
 
 layer2.draw();
 
+const squareBorder = {
+    x: stage.width() / 2,
+    y: stage.height() / 2,
+    sides: 4,
+    radius: 170,
+    stroke: 'red',
+    strokeWidth: 2,
+    shadowOffsetX: 20,
+    shadowOffsetY: 25,
+    shadowBlur: 80,
+    opacity: 0.9,
+    id: 'border',
+    name: 'border'
+};
+const Rectborder = new Konva.RegularPolygon(squareBorder);
+
+layer3.add(Rectborder);
+stage.add(layer3);
+layer3.draw();
 
 /**
  * ***************************
@@ -102,7 +121,7 @@ circle.on('mouseout touched', () => console.log('test'));
 circle.draggable('true');
 newCustomShape.draggable('true');
 pentagon.draggable('true');
-
+Rectborder.draggable('true');
 circle.on('xChange', () => {
     console.log('position changed')
 });
